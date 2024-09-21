@@ -1,0 +1,381 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.intro {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Travel-Images-For-Desktop.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+#layout
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#navelement
+{
+    background-color: rgba(0, 0, 0, 0.982);
+    /* color: white; */
+    height:10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: 150px; */
+    
+}
+ #navelement div{
+    margin-left: 40%;
+} 
+.logo{
+    height: 60%;
+    width: 8%;
+    border-radius: 50%;
+    background-size: cover;
+
+}
+.checkbtn{
+    color: white;
+    display: none;
+    font-size: x-large;
+}
+.checkbtn:hover{
+    background-color:transparent;
+}
+
+.menu
+{
+    padding: 10px;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.Heading{
+    color: white;
+    font-size: 46px;
+    font-weight: 400px;
+    margin-top: 250px;
+}
+.paragraph{
+    color: white;
+    font-size: 18px;
+}
+.button{
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    height: 6vh;
+    width: 12vw;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+@media screen and (min-width:300px) and (max-width:1000px)
+{
+    #navelement div
+    {
+      margin-left: 15%;  
+    }
+    #nav-item a
+    {
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .button{
+        height: 6vh;
+        width: 18vw;
+    }
+}
+@media screen and (max-width:750px)
+{
+    .button{
+        height: 6vh;
+        width: 30vw;
+    }
+    .Heading{
+        font-size: 28px;
+    }
+}
+.serivescontainer,.serivescontainer1{
+    background-color:rgb(248, 245, 245);
+    background-size: cover;
+    height: 100%;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: row; */
+}
+.childserivescontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    width: 80%;
+    gap: 50px;
+}
+
+#grid_1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section1{
+    background: #f9f9f9;
+    /* padding: 20px; */
+    width: 25%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.section1:hover {
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+
+.locations{
+    padding: 20px;
+}
+.section1 img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    /* .childserivescontainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    } */
+    #grid_1
+    {
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .section1{
+        width: 50%;
+    }
+    
+}
+.serivesplaces{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px;
+}
+.centering{
+    display: flex;
+    justify-content: center;
+}
+.locations h1{
+    font-size: 24px;
+    color: black;
+    font-weight: 500px;
+}
+.locations p{
+    font-size: 14px;
+    color: black;
+}
+
+.childserivescontainer1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section2{
+    background: #f9f9f9;
+    padding: 20px;
+    width: 25%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+.section2 div img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.section3{
+    background: #f9f9f9;
+    /* padding: 20px; */
+    width: 25%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+.section3 div img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+
+
+
+/* 2nd page*/
+
+.hero {
+    background: url('https://images.hdqwalls.com/wallpapers/travel-hd.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#input,button,date {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.plandates{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px;
+}
+#button {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    cursor: pointer;
+}
+.how-it-works-section {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    color: rgba(0, 0, 0, 0.838);
+    border-radius: 10px;
+    margin: 20px;
+}
+.step:hover {
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+.step h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* 4rdpage */
+.register{
+    height: 100vh;
+}
+.Login{
+    height: 100vh;
+}
+.container1 {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#button-form {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.852);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button-form:hover {
+    background-color: black;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
